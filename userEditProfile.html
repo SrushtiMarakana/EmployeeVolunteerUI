@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>User Edit Profile Page</title>
+    <link href="bootstrap-5.2.2-dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+      $(function()
+      {
+          $("but1").click(function()
+          {
+            $("#skillbox1 option:selected").each(function()
+            {
+              $(this).remove().appendTo("#skillbox2");
+            });
+          });
+
+          $("but2").click(function()
+          {
+            $("#skillbox2 option:selected").each(function()
+            {
+              $(this).remove().appendTo("#skillbox1");
+            });
+          });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="container">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <button class="navbar-toggler navbox1" type="button" data-bs-toggle="offcanvas" 
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+            aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+              <div class="offcanvas offcanvas-start" tabindex="-1" data-bs-scroll="true"
+              id="navbarSupportedContent" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+
+                <div class="offcanvas-body">
+                  <div class="navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 link-padding1">
+                    <li class="nav-item link-padding" >
+                            <a class="nav-link " href="#">Stories</a>
+                    </li>
+
+              <li class="nav-item dropdown link-padding">
+                <a class="nav-link dropdown-toggle policy" href="#" role="button" data-bs-toggle="dropdown" id="navbarDropdownMenuLink" aria-expanded="true">
+                  Policy
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Volunteering</a></li>
+                  <li><a class="dropdown-item" href="#">Sponsored</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          </div>
+          </div>
+          <div>
+          <img src="Assets/volunteer4.png" class="rounded-circle" height="40px" width="40px" alt="...">&nbsp;
+            <span data-bs-toggle="dropdown" class="dropdown-toggle" aria-expanded="false">
+              Srushti Marakana
+            </span>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Dashboard</a></li>
+              <li><a class="dropdown-item" href="#">My Account</a></li>
+              <li><a class="dropdown-item" href="#">Help Center</a></li>
+              <li><a class="dropdown-item" href="#">Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <hr style="margin-bottom:0px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3" style="margin-top: 20px;">
+          <div class="userEditStyle1">
+            <div class="text-center">
+              <img src="Assets/volunteer4.png" alt="..." class="rounded-circle" height="120px" width="120px">
+              <div style="padding-top: 10px;font-size: 18px;">Srushti Marakana</div>
+              <a href="#ChangePassword" class="link-1" data-bs-toggle="modal">change Password</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-9">
+          <div>
+            <div class="userEditStyle2">
+              Basic Information
+            </div>
+          </div>
+          <hr style="margin-bottom: 15px;">
+          <div>
+            <form action="#" class="row g-3" method="">
+              <div class="col-lg-6">
+                <label for="name" class="form-label mb-0">Name*</label>
+                <input type="text" class="form-control" style="box-shadow: none;" placeholder="Enter your name" name="name" required="">
+              </div>
+              <div class="col-lg-6">
+                <label for="surname" class="form-label mb-0">Surname*</label>
+                <input type="text" class="form-control" style="box-shadow: none;" placeholder="Enter your surname" name="surname" required="">
+              </div>
+              <div class="col-lg-6">
+                <label for="EmployeeID" class="form-label mb-0">Employee ID</label>
+                <input type="text" class="form-control" style="box-shadow: none;" placeholder="Enter your employee id" name="EmployeeID">
+              </div>
+              <div class="col-lg-6">
+                <label for="Manager" class="form-label mb-0">Manager</label>
+                <input type="text" class="form-control" style="box-shadow: none;" placeholder="Enter your manager details" name="Manager">
+              </div>
+              <div class="col-lg-6">
+                <label for="Title" class="form-label mb-0">Title</label>
+                <input type="text" class="form-control" style="box-shadow: none;" placeholder="Enter your title" name="Title">
+              </div>
+              <div class="col-lg-6">
+                <label for="Department" class="form-label mb-0">Department</label>
+                <input type="text" class="form-control" style="box-shadow: none;" placeholder="Enter your department" name="Department">
+              </div>
+              <div class="col-12">
+                <label for="MyProfile" class="form-label mb-0">My Profile*</label>
+                <textarea class="form-control" style="box-shadow: none;" placeholder="Enter your comments..." name="MyProfile" rows="3"></textarea>
+              </div>
+              <div class="col-12">
+                <label for="Volunteer" class="form-label mb-0">Why I Volunteer?</label>
+                <textarea class="form-control" style="box-shadow: none;" placeholder="Enter your comments..." name="Volunteer" rows="3"></textarea>
+              </div>
+              <div class="userEditStyle2" style="margin-top: 30px;">
+                Address Information
+              </div>
+              <hr class="mt-0">
+              <div class="col-lg-6">
+                <label for="City" class="form-label mb-0">City</label>
+                <input type="text" class="form-control" style="box-shadow: none;" placeholder="Enter your city" name="City">
+              </div>
+              <div class="col-lg-6">
+                <label for="Country" class="form-label mb-0">Country*</label>
+                <select class="form-select form-control" name="Country" style="box-shadow: none;" aria-label="Default select example">
+                  <option selected>Select your country</option>
+                  <option value="1">India</option>
+                  <option value="2">US</option>
+                  <option value="3">Switzerland</option>
+                </select>
+              </div>
+              <div class="userEditStyle2" style="margin-top: 30px;">
+                Professional Information
+              </div>
+              <hr class="mt-0">
+              <div class="col-lg-6">
+                <label for="Availablity" class="form-label mb-0">Availablity</label>
+                <select class="form-select form-control" name="Availablity" style="box-shadow: none;" aria-label="Default select example">
+                  <option selected>Select your Availablity</option>
+                  <option value="1">X</option>
+                  <option value="2">Y</option>
+                  <option value="3">Z</option>
+                </select>
+              </div>
+              <div class="col-lg-6">
+                <label for="LinkedIn" class="form-label mb-0">LinkedIn</label>
+                <input type="text" class="form-control" style="box-shadow: none;" placeholder="Enter linkedIn URL" name="LinkedIn">
+              </div>
+              <div class="userEditStyle2" style="margin-top: 30px;">
+                My Skills
+              </div>
+              <hr style="margin-bottom: 15px;" class="mt-0">
+              <textarea class="form-control" style="box-shadow: none;" name="MySkills" rows="7">
+Anthropology
+Archeology
+Astronomy
+Computer Science
+Environmental Science
+History
+</textarea>
+              <div class="col-12">
+                <div>
+                  <a href="#AddNewSkills" type="submit" class="form-control shareStoryStyle2 rounded-pill btn btn-outline-dark w-auto AddNewSkills" style="box-shadow: none;" data-bs-toggle="modal">Add Skills</a>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="text-end">
+                  <button type="submit" class="form-control shareStoryStyle2 rounded-pill btn btn-outline-warning w-auto" style="box-shadow: none;">Save</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <hr style="margin-top:30px;">
+    <div class="container">
+      <div class="PrivacyPolicy">
+        <span>
+          <a class="link-1" href="#">Privacy Policy</a>
+        </span>
+        <span style="padding-left: 30px;">
+          <a class="link-1" href="#ContactUs" data-bs-toggle="modal">Contact us</a>
+        </span>
+      </div>
+    </div>
+
+
+    <!--Change Password-->
+    <div class="modal modalChangePassword fade" id="ChangePassword" aria-hidden="true" aria-labelledby="ChangePasswordLabel" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" style="padding: 20px;">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="ChangePasswordLabel">Change Password</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <form action="#" method="">
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-12">
+                <input type="password" id="oldpwd" name="oldpassword" style="box-shadow: none;" placeholder="Enter old password" maxlength="10" class="form-control mb-4" minlength="8" required="">
+              </div>
+              <div class="col-12">
+                <input type="password" id="newpwd" name="newpassword" style="box-shadow: none;" placeholder="Enter new password" maxlength="10" class="form-control mb-4" minlength="8" required="">
+              </div>
+              <div class="col-12">
+                <input type="password" id="cnewpwd" name="cnewpassword" style="box-shadow: none;" placeholder="Enter confirm password" maxlength="10" class="form-control" minlength="8" required="">
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="form-control shareStoryStyle2 rounded-pill btn btn-outline-dark" style="width: auto;box-shadow: none;">Cancel</button>
+            <button type="submit" class="form-control  shareStoryStyle2 rounded-pill btn btn-outline-warning" style="width: auto; box-shadow: none;">Change Password</button>
+          </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!--Add New Skills-->
+    <div class="modal modalAddSkills fade" id="AddNewSkills" aria-hidden="true" aria-labelledby="AddNewSkillsLabel" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content" style="padding: 20px;">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="AddNewSkillsLabel">Add your Skills</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row" style="margin-top: 10px;">
+              <div class="col-lg-5">
+                <select id="skillbox1" multiple="multiple" class="wh-100 form-control addSkillsStyle1" >
+                  <option>Anthropology</option>
+                  <option>Archeology</option>
+                  <option selected>Astronomy</option>
+                  <option>Computer Science</option>
+                  <option selected>Environmental Science</option>
+                  <option selected>History</option>
+                  <option>Library Sciences</option>
+                  <option selected>Mathematics</option>
+                  <option>Music Theory</option>
+                  <option>Research</option>
+                  <option>Administrative Support</option>
+                  <option>Customer Service</option>
+                  <option selected>Data Entry</option>
+                  <option>Executive Admin</option>
+                  <option>Office Management</option>
+                  <option>Office Reception</option>
+                  <option>Program Management</option>
+                  <option>Transactions</option>
+                  <option selected>Agronomy</option>
+                  <option>Animal Care / Handling</option>
+                  <option>Animal Therapy</option>
+                  <option>Aquarium Maintenance</option>
+                  <option>Botany</option>
+                  <option>Environmental Education</option>
+                  <option>Environmental Policy</option>
+                  <option>Farming</option>
+                </select>
+              </div>
+              <div class="col-lg-2 text-center justify-content-center align-items-center d-flex d-block">
+                <div class="row">
+                <div class="col-12">
+                  <input type="button" class="btn btn-outline-warning mt-2" id="but1" value=">"/>
+                </div>
+                <div class="col-12">
+                  <br>
+                </div>
+                <div class="col-12">
+                  <input type="button" class="btn btn-outline-warning mb-2" id="but2" value="<"/>
+                </div>
+                </div>
+              </div>
+              <div class="col-lg-5">
+                <select id="skillbox2" multiple="multiple" class="w-100 form-control addSkillsStyle1" >
+                  <option>Astronomy</option>
+                  <option>Environmental Science</option>
+                  <option>History</option>
+                  <option>Mathematics</option>
+                  <option>Data Entry</option>
+                  <option>Agronomy</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col" style="margin-top: 10px;">
+            <button type="submit" class="form-control shareStoryStyle2 rounded-pill btn btn-outline-dark" style="width: auto;box-shadow: none;margin-right: 10px;margin-left: 20px;">Cancel</button>
+            <button type="submit" class="form-control  shareStoryStyle2 rounded-pill btn btn-outline-warning" style="width: auto; box-shadow: none;">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Contact Us-->
+    <div class="modal modalContactUs fade" id="ContactUs" aria-hidden="true" aria-labelledby="ContactUsLabel" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" style="padding: 20px;">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="ContactUsLabel">Contact Us</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <form action="#" method="">
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-12">
+                <label for="Name" class="form-label mb-0">Name*</label>
+                <input class="form-control mb-3" style="box-shadow: none;" type="text" mame="Name" value="Smith Doh" disabled>
+              </div>
+              <div class="col-12">
+                <label for="email" class="form-label mb-0">Email Address*</label>
+                <input class="form-control mb-3" style="box-shadow: none;" type="email" mame="email" value="smithdoh1234@gmail.com" disabled>
+              </div>
+              <div class="col-12">
+                <label for="subject" class="form-label mb-0">Subject*</label>
+                <input class="form-control mb-3" style="box-shadow: none;" type="text" mame="subject" placeholder="Enter your Subject" required="">
+              </div>
+              <div class="col-12">
+                <label for="Message" class="form-label mb-0">Message*</label>
+                <textarea class="form-control" style="box-shadow: none;" name="Message" rows="3" placeholder="Enter your message" required=""></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="form-control shareStoryStyle2 rounded-pill btn btn-outline-dark" style="width: auto;box-shadow: none;">Cancel</button>
+            <button type="submit" class="form-control  shareStoryStyle2 rounded-pill btn btn-outline-warning" style="width: auto; box-shadow: none;">Save</button>
+          </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>

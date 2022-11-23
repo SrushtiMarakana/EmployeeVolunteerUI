@@ -1190,3 +1190,99 @@ li{
 .dropdown-toggle.sortbybutton::after{
     margin-left: 60px;
 }
+
+.userEditStyle1{
+    border:1px solid #e8e8e8;
+    padding: 20px;
+}
+
+.userEditStyle2{
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.modalChangePassword{
+    --bs-modal-border-radius: 0rem;
+}
+
+.modalAddSkills{
+    --bs-modal-border-radius: 0rem;
+}
+
+.addSkillsStyle1{
+    border:1px solid #e8e8e8;
+    box-shadow: none;
+    border-radius: 0%;
+    overflow-y: auto;
+    min-height: 600px;
+}
+
+a.AddNewSkills:focus{
+    border: solid 1px #757575;
+    color: #757575;
+}
+
+.addSkillsStyle1:focus{
+    box-shadow: none;
+}
+
+.modalContactUs{
+    --bs-modal-border-radius: 0rem;
+}
+
+.policyStyle1{
+    font-size: 34px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.policyStyle2{
+    background-color: none;
+    font-size: 16px;
+    color: black;
+    padding-left: 0%;
+}
+
+a.nav-link.policyStyle2.active{
+    font-weight: 500;
+    background-color: white;
+    font-size: 16px;
+    color: black;
+}
+
+a.nav-link.policyStyle2:focus{
+    font-weight: 500;
+    background-color: none;
+    font-size: 16px;
+    color: black;
+}
+
+.policyStyle2:hover{
+    font-weight: 500;
+    background-color: none;
+    font-size: 16px;
+    color: black;
+}
+
+.policyStyle3{
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.policyStyle4{
+    font-size: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.policyStyle5{
+    font-size:24px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.policyStyle6{
+    font-size: 15px;
+}
+
