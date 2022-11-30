@@ -40,35 +40,16 @@
     --bs-btn-active-color: white;
 }
 
-.loginform{
-    margin-top: 140px;
-    padding-bottom: 180px;
-    
-}
-
-.Registrationform{
-    margin-top: 10px;
-    padding-bottom: 30px;
-}
-
 .errormessage{
     font-size: 13px;
     color:red;
 }
 
-@media (min-width:993px) and (max-width:1200px) {
-    .loginform{
-        margin-top: 70px;
-        padding-bottom: 50px;
-    }
-}
-
-@media (min-width:993px) and (max-width:1200px) {
+@media (min-width:993px) and (max-width:1440px) {
     .reg-input{
         margin-top: 1px;
         font-size: 12px;
         padding: 3px;
-        margin-bottom: 3px;
     }
 
     .reg-label{
@@ -80,28 +61,9 @@
         padding: 2px;
     }
 
-    .Registrationform{
-        margin-top: 10px;
-        padding-bottom: 7px;
-        margin-bottom: 0px;
-    }
-
     .errormessage{
-        font-size: 10px;
+        font-size: 12px;
         font-weight: 400;
-    }
-}
-
-@media (max-width:768px){
-
-    .Registrationform{
-        margin-top: 1px;
-    }
-}
-
-@media (max-width:768px){
-    .loginform{
-        margin-top: 0px;
     }
 }
 
@@ -266,6 +228,15 @@ hr {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+@media (max-width:768px){
+    .privacyPolicy{
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+}
+
+
 
 .cardcontainer1{
     position: relative;
